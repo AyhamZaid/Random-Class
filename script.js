@@ -60,25 +60,35 @@ shuffle();
 shuffle2();
 var counter = 0;
 for (let i = 0; i < randomArr.length - 4; i++) {
+  if (counter == 0) {
+    document.write(
+      "<pre >" +
+        "Group  (" +
+        (counter + 1) +
+        ")  " +
+        arrayOfSixElements[0] +
+        "</pre>"
+    );
+  }
   if (i % 4 == 0) {
     document.write(
-      "<pre >" + "group  " + (counter + 1) + " " + randomArr[i] + "</pre>"
+      "<pre >" + "Group  (" + (counter + 1) + ")  " + randomArr[i] + "</pre>"
     );
     document.write(
-      "<pre>" + "group  " + (counter + 1) + " " + randomArr[i + 1] + "</pre>"
+      "<pre>" + "Group  (" + (counter + 1) + ")  " + randomArr[i + 1] + "</pre>"
     );
     document.write(
-      "<pre>" + "group  " + (counter + 1) + " " + randomArr[i + 2] + "</pre>"
+      "<pre>" + "Group  (" + (counter + 1) + ")  " + randomArr[i + 2] + "</pre>"
     );
     document.write(
-      "<pre>" + "group  " + (counter + 1) + " " + randomArr[i + 3] + "</pre>"
+      "<pre>" + "Group  (" + (counter + 1) + ")  " + randomArr[i + 3] + "</pre>"
     );
     counter++;
     document.write(
       "<pre>" +
-        "group  " +
+        "Group  (" +
         counter +
-        " " +
+        ")  " +
         arrayOfSixElements[counter] +
         "<br><br>" +
         "</pre>"
